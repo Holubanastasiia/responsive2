@@ -158,6 +158,10 @@ body {
   margin-top: 1px;
 }
 
+.main__arrow-img{
+  display: none;
+}
+
 .main__text-left {
   font-weight: normal;
   color: #2d3436;
@@ -270,6 +274,7 @@ body {
   color: #6c5ce7;
   outline: none;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .item__btn:hover {
@@ -443,6 +448,10 @@ body {
   padding: 80px 0px 135px 0px;
 }
 
+.footer__inner-mobile{
+  display: none;
+}
+
 .footer__title{
   font-weight: 800;
   font-size: 12px;
@@ -564,6 +573,80 @@ margin-right: 0px;
     border-radius: 8px;
   }
 
+  .main{
+    background-image: url(/img/main_bg_mobile.png);    
+    background-position: top;
+
+  }
+
+  .main__title{
+    font-size: 64px;
+    line-height: 77px;
+  }
+
+  .main__title-word,
+  .main__title-word2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .main__title-word{
+    position: relative;
+  }
+
+  .main__title-word::after{
+    content: "";
+    width: 105px;
+    height: 32px;
+    background-color: #55EFC4;
+    border-radius: 40px;
+    left: -10px;
+    bottom: -8px;
+    z-index: -1;
+    position: absolute;
+
+
+  }
+
+  .main__title-bottom{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .main__arrow-img{
+    display: block;
+    margin-left: 145px;
+  }
+
+  .main__text-left{
+    display: none;
+  }
+
+  .main__text-bg{
+    display: none;
+
+  }
+
+  .main__btn{
+    width: 130px;
+    height: 37px;
+    margin: 35px 110px;
+
+    /* text */
+    font-size: 14px;
+    line-height: 24px;
+
+  }
+
+  .history{
+    padding-top: 0;
+  }
+  
+
   .history__inner-title {
     padding: 0px 15px;
     font-size: 24px;
@@ -661,25 +744,52 @@ margin-right: 0px;
     color: #2d3436;
   }
 
-  div:hover.inner__title {
-    font-weight: bold;
-    color: #55efc4;
-  }
 
   .inner__price-title,
   .inner__price-title-word {
     color: #6c5ce7;
   }
 
-  .inner__price-title:hover {
+  .price__inner-item:hover .inner__price-title {
     font-weight: bold;
     letter-spacing: 0.25px;
     color: #ffffff;
     text-shadow: 0px 4px 0px #000000;
   }
 
-  .price__benefits__item-img {
+  .price__inner-item:hover .inner__title{
+    color: #55EFC4;
   }
+
+  .price__inner-item:hover{
+    background-color: #6C5CE7;
+  }
+
+  .price__inner-item:hover .inner__price-title-word{
+    color: #FFFFFF;
+  }
+
+  .price__inner-item:hover .price__benefits__item-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    align-items: center;
+  }
+
+  .price__inner-item:hover .price__benefits__item-btn{
+    /* text */
+    font-size: 18px;
+    line-height: 32px;
+    color: #2D3436;
+
+    /* element */
+    background-color: #fff;
+
+  }
+
+
 
   .price__inner-item {
     box-shadow: 0px 12px 24px rgba(38, 50, 56, 0.08);
@@ -706,10 +816,52 @@ margin-right: 0px;
     font-weight: bold;
   }
 
-  /* .price__inner-item:hover,
-  .inner__price-title:hover,
-  .inner__price-title-word:hover {
-    background-color: #6c5ce7;
-    color: white;
-  } */
+
+  .footer__left{
+    display: none;
+  }
+
+  .footer__right{
+    display: none;
+  }
+
+  .footer__inner-mobile{
+    display: block;
+  }
+
+  .footer__inner{
+    padding-bottom: 40px;
+  }
+
+  .footer__inner-mobile{
+    text-align: center;
+
+  }
+
+  .footer__mobile-text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #2D3436;
+  }
+
+  .footer__mobile-info{
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    color: #00B894;
+  }
+
+  .email{
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .logos__mobile{
+    margin-top: 25px;
+  }
+
+
+
 }
